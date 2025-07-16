@@ -3,17 +3,14 @@ import './App.scss'
 import {Banner}from './components/banner/banner.jsx'
 import aboutPicture from './assets/about_banner.png';
 import logementsData from './data/logements.json';
-
+import Router from './routes.jsx';
 
 function App() {
-  return (
-  <div>
-    <h1>Bienvenue sur Kasa</h1>
-    <p>Nombre de logements : {logementsData.length}</p>
-  </div>
-);
+  return <Router />;
 }
+
 export default App;
+
 /*
 function App() {
   return (

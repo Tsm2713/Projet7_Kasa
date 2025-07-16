@@ -22,3 +22,22 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# node
+node_modules/
+dist/
+.vite/
+*.log
+
+# OS
+.DS_Store
+
+# environnement
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# build
+*.local
