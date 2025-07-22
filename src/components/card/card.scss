@@ -1,0 +1,19 @@
+.card {
+  background-color: #f6f6f6; /* Fond gris clair comme sur la maquette */
+  border-radius: 10px;      /* Coins légèrement arrondis */
+  /* Centrer le texte à l'intérieur du bloc */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Optionnel: ombre portée si la maquette en prévoit une */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+  /* Le texte est centré verticalement et horizontalement grâce au parent en flex */
+  /* On peut ajuster la police ou son poids selon la maquette */
+}

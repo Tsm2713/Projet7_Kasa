@@ -1,0 +1,13 @@
+.footer {
+  background-color: #000; /* Fond noir comme indiqué par le design Kasa */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  /* Le footer reste collé en bas de la page grâce au conteneur .app en flex */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  /* Texte blanc centré du footer */
+}
