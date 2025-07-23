@@ -1,22 +1,24 @@
 .banner {
-  /* Hauteur de la bannière : prend une partie de l'écran sans dépasser 100vh total */
-  height: 30vh; 
-  /* Image de fond avec filtre sombre superposé (assurez-vous du chemin de l'image) */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/banner.jpg');
+  width: 1240px;
+  height: 223px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/home_banner.png');
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* Centrage du contenu (texte) horizontalement et verticalement */
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  margin: 30px 100px 0 115px;
 }
 
 .banner h1 {
   color: #fff;
-  font-size: 2.5rem;        /* Taille du texte de la bannière, à ajuster selon la maquette */
+  font-size: 2.5rem;
   text-align: center;
   font-weight: 500;
-  /* Police éventuellement spécifique si précisée dans la maquette 
-     (exemple : font-family: 'Montserrat', sans-serif;) */
+  font-style: bold;
 }

@@ -1,17 +1,17 @@
 .home {
-  /* Le composant Home occupe toute la hauteur disponible (contenu principal) */
-  height: 100%;
-  display: flex;
   flex-direction: column;
 }
 
 .gallery {
-  /* La galerie de cartes occupe tout l'espace restant sous la bannière */
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
-  grid-template-rows: repeat(2, 1fr);    /* 2 lignes égales */
-  gap: 20px;         /* Espace entre les cartes (horizontal et vertical) */
-  padding: 20px 50px;/* Marges intérieures pour aérer les bords, alignées avec le header */
-  /* Tout le contenu tient dans la page sans défilement vertical */
+  width: 1240px;
+  height: 829px;
+  background-color: #f6f6f6; 
+  border-radius: 25px;
+  margin: 50px auto;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px; 
+  justify-content: center; 
+  box-sizing: border-box; 
 }

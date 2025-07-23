@@ -1,38 +1,32 @@
 .header {
-  /* Affichage en flex pour aligner le logo et le menu sur une même ligne */
   display: flex;
-  justify-content: space-between; /* Logo aligné à gauche, menu à droite */
-  align-items: center;            /* Alignement vertical au centre */
-  padding: 20px 50px;             /* Espacement interne horizontal selon la maquette */
-  background-color: #fff;         /* Fond blanc du header (selon design épuré) */
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px 120px 40px 120px;        
+  background-color: #FFFF;
 }
 
 .logo img {
-  /* Taille du logo (ajuster si la maquette spécifie une dimension précise) */
-  height: 40px;
-  width: auto;
+  height: 68px;
+  width: 210px;
 }
 
 .nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 30px;    /* Espacement horizontal net entre les liens du menu */
-  margin: 0;
-  padding: 0;
+  gap: 57px;   
 }
-
-
 
 .nav a {
   text-decoration: none;
   color: #000;
-  font-size: 16px;
-  /* font-weight: 500;  // Par exemple, si le design prévoit une police semi-grasse */
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.nav a:hover {
-  /* Effet visuel au survol (exemple : soulignement) */
+.nav a.active {
   text-decoration: underline;
 }
+
 
