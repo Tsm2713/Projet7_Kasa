@@ -1,11 +1,16 @@
-import React from 'react';
-import './Banner.scss';
+import React from "react";
+import "./banner.scss";
 
-function Banner() {
+function Banner({ image, text }) {
   return (
-    <section className="banner">
-      <h1>Chez vous, partout et ailleurs</h1>
-    </section>
+    <div
+      className="banner"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(${image})`,
+      }}
+    >
+      {text && <h1>{text}</h1>}
+    </div>
   );
 }
 
