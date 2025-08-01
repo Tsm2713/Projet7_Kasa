@@ -1,17 +1,25 @@
 .home {
   flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .gallery {
-  width: 1240px;
-  height: 829px;
-  background-color: #f6f6f6; 
-  border-radius: 25px;
-  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #F6F6F6;
   padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px; 
-  justify-content: center; 
-  box-sizing: border-box; 
+  border-radius: 25px;
+  width: 85%;
+  max-height: 829px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  overflow-y: auto;
+  position: relative;
 }
+
+
+

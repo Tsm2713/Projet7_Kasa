@@ -6,7 +6,7 @@ function Banner({ image, text }) {
     <div
       className="banner"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(${image})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(${image})`,
       }}
     >
       {text && <h1>{text}</h1>}

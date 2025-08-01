@@ -1,0 +1,60 @@
+.carrousel {
+  position: relative;
+  width: 1240px;
+  height: 415px;
+  margin: 0 auto;              /* Centre le carrousel horizontalement dans son conteneur parent */
+  border-radius: 25px;
+  overflow: hidden;            /* Masque les débordements (pour arrondir les coins de l'image) */
+  
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* L'image couvre tout le conteneur en conservant son ratio */
+    /* Optionnel: border-radius: 25px;  (inutile si overflow:hidden sur le parent) */
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 80px;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 36px;
+    cursor: pointer;
+    user-select: none;         /* Empêche la sélection du symbole au clic */
+
+    /* On peut éventuellement ajouter un léger effet au survol (hover) */
+    &:hover {
+      color: #FFFFFF;
+      /* Par exemple, un fond semi-transparent pour améliorer la visibilité sur fond clair */
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__arrow--left {
+    left: 20px;   /* Positionné à 20px du bord gauche */
+  }
+
+  &__arrow--right {
+    right: 20px;  /* Positionné à 20px du bord droit */
+  }
+
+  &__counter {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    /* On centre le texte horizontalement grâce à text-align, 
+       et on peut ajuster la position verticale via bottom. */
+    
+    /* Optionnel: ajout d'une légère ombre portée pour lisibilité sur images claires */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,38 @@
+/* host.scss */
+.host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.host__name {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 143%;
+  color: #FF6060;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.host__picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #C4C4C4; /* placeholder background if image not loaded */
+}
+
+/* Responsive: align host info to left on mobile (image on left, name on right) */
+@media (max-width: 768px) {
+  .host {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+  .host__name {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}

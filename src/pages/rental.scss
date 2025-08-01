@@ -1,0 +1,100 @@
+.rental {
+  max-width: 1240px;
+  margin: 0 auto;
+
+  .carrousel {
+    margin-bottom: 30px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+
+    .rental__title {
+      font-size: 2rem;
+      color: #ff6060;
+      font-weight: 500;
+    }
+
+    .rental__location {
+      font-size: 1.1rem;
+      color: #000;
+    }
+
+    .rental__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  }
+
+  &__host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 15px;
+
+    .collapse {
+      flex: 1;
+    }
+
+    ul.equipments {
+      list-style: none;
+      padding-left: 0;
+
+      &__item {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .rental {
+    padding: 0 20px;
+
+    &__header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    &__host {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+
+    &__content {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .rental__title {
+      font-size: 1.5rem;
+    }
+
+    .rental__location {
+      font-size: 1rem;
+    }
+  }
+}

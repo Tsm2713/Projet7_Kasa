@@ -1,23 +1,20 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "./collapse.scss";
 
-function Collapse({ title, children }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = () => setIsOpen(!isOpen);
+export default function Collapse({ title, children }) {
+  const [isOpen, setIsOpen] = useState(false); // chaque instance a son propre état
 
   return (
     <div className="collapse">
-      <div className="collapse-header" onClick={toggleOpen}>
+      <div
+        className={`collapse-header ${isOpen ? "open" : ""}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <h2>{title}</h2>
-        <FontAwesomeIcon
-          icon={isOpen ? faChevronDown  : faChevronUp}
-          className="arrow-icon"
-        />
+        <FontAwesomeIcon icon={faChevronDown} className={`arrow-icon ${isOpen ? "rotated" : ""}`} />
       </div>
-
       {isOpen && (
         <div className="collapse-content">
           {children}
@@ -26,5 +23,3 @@ function Collapse({ title, children }) {
     </div>
   );
 }
-
-export default Collapse;

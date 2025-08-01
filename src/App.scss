@@ -1,35 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-/* Réinitialisation de base pour enlever les marges par défaut */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Le HTML, body et l'élément racine (#root) prennent toute la hauteur */
 html, body, #root {
   height: 100%;
 }
 
-/* Application de la police Montserrat sur tout le site et fond blanc général */
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #FFFFFF;
   color: #000;
-}
-
-/* Conteneur principal de l'application en flex colonne 
-   - occupe 100% de la hauteur du viewport pour éviter le scroll vertical indésirable */
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Section principale entre le header et le footer qui occupe tout l'espace disponible */
-.main-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
 }
