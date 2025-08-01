@@ -15,7 +15,7 @@ function Carrousel({ images }) {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
   };
 
-  // Si le tableau d'images est vide, ne rien afficher
+ 
   if (!images || images.length === 0) {
     return null;
   }
