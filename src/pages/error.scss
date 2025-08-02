@@ -23,3 +23,18 @@
     text-decoration: underline;
     padding-bottom: 110px;
 }
+
+@media screen and (max-width: 767.98px) {
+ .error-content {
+    .error-code {
+    font-size: 96px;
+  }
+  }
+  .error-message {
+    font-size: 16px;
+  }
+
+  .error-link {
+    font-size: 13px;
+  }
+}

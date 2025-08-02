@@ -21,3 +21,16 @@
     padding-top: 50px;
   }
 }
+
+ @media screen and (max-width: 768px) {
+
+  .footer{
+
+    &__text {
+    font-size: 12px;
+    padding-top: 15px;
+    width: 100px;
+  }
+
+  }
+}
