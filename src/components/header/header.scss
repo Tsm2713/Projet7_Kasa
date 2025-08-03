@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 45px 120px 40px 120px;
-  background-color: #FFFF;
+  background-color: #FFFFFF;
 
   .logo img {
     height: 68px;
@@ -19,7 +19,7 @@
 
   .nav a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
     font-size: 24px;
     font-weight: 300;
   }
@@ -28,13 +28,12 @@
     text-decoration: underline;
   }
 
-  // 🔽 Media Query pour responsive mobile/tablette max 768px
   @media screen and (max-width: 768px) {
     margin: 20px 20px 27px 20px;
 
     .logo img {
       width: 145px;
-      height: 46.88px;
+      height: 47px;
     }
 
     .nav ul {

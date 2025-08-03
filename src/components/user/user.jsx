@@ -5,12 +5,12 @@ function User({ name, picture }) {
   const [firstName, lastName] = name.split(" ");
 
   return (
-    <div className="host">
-      <p className="host__name">
+    <div className="user">
+      <p className="user__name">
         {firstName}<br />
         {lastName}
       </p>
-      <img className="host__picture" src={picture} alt={name} />
+      <img className="user__picture" src={picture} alt={name} />
     </div>
   );
 }

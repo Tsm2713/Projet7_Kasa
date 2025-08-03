@@ -15,7 +15,7 @@ function Carrousel({ images }) {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
   };
 
- 
+
   if (!images || images.length === 0) {
     return null;
   }
@@ -26,10 +26,10 @@ function Carrousel({ images }) {
   return (
     <div className="carrousel">
       {/* Image du carrousel */}
-      <img 
-        src={currentImage} 
-        alt="Photo du logement" 
-        className="carrousel__image" 
+      <img
+        src={currentImage}
+        alt="Photo du logement"
+        className="carrousel__image"
       />
 
       {/* Affichage des flèches et du compteur seulement s'il y a plus d'une image */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import starFilled from '/src/assets/star-filled.svg';
-import starOutline from '/src/assets/star-outline.svg';
+import starOutline from '/src/assets/star-outline.png';
 import './rating.scss';
 
 const Rating = ({ rating }) => {

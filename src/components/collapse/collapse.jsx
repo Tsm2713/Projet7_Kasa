@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import "./collapse.scss";
 
 export default function Collapse({ title, children }) {
@@ -13,7 +13,7 @@ export default function Collapse({ title, children }) {
         onClick={() => setIsOpen(!isOpen)}
       >
         <h2>{title}</h2>
-        <FontAwesomeIcon icon={faChevronDown} className={`arrow-icon ${isOpen ? "rotated" : ""}`} />
+        <FontAwesomeIcon icon={faAngleUp} className={`arrow-icon ${isOpen ? "rotated" : ""}`} />
       </div>
       {isOpen && (
         <div className="collapse-content">

@@ -5,7 +5,7 @@
     background-color: #ff6060;
     color: white;
     padding: 15px 20px;
-    font-size: 1.2rem;
+    font-size: 19px;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -15,10 +15,12 @@
 
     .arrow-icon {
       transition: transform 0.3s ease;
+      height: 30px;
+      width: 30px;
     }
 
     &.open .arrow-icon {
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
     }
   }
 

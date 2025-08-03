@@ -1,12 +1,11 @@
-/* host.scss */
-.host {
+.user {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 100%;
 }
 
-.host__name {
+.user__name {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -16,21 +15,21 @@
   text-align: right;
 }
 
-.host__picture {
+.user__picture {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: #C4C4C4; /* placeholder background if image not loaded */
+  background-color: #C4C4C4;
 }
 
-/* Responsive: align host info to left on mobile (image on left, name on right) */
+
 @media (max-width: 768px) {
-  .host {
+  .user {
     justify-content: flex-start;
     flex-direction: row-reverse;
   }
-  .host__name {
+  .user__name {
     text-align: left;
     margin-left: 10px;
     margin-right: 0;
