@@ -1,8 +1,7 @@
 import { useState } from "react";
-import "./carrousel.scss";  // Import du fichier SCSS associé au composant
+import "./carrousel.scss";  
 
 function Carrousel({ images }) {
-  // État local pour l'index de l'image courante
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Gestion du clic sur la flèche "suivante"
